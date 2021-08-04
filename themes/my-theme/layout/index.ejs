@@ -1,0 +1,16 @@
+This is the index.ejs file
+<br>
+
+<% site.posts.forEach(post=> { %>
+    <a href="<%- post.path %> "><%- post.title %> </a> <br>
+<% }) %>
+
+<%- titlecase('This is my string') %> 
+
+<br>
+<%- site.data.myData.var1 %>
+<br>
+
+<% for (var value in site.data.myData) { %>
+  <%= site.data.myData[value] %>
+<% } %>
